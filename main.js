@@ -61,7 +61,7 @@ function newElement() {
   var t = document.createTextNode(inputValue);
   li.appendChild(t);
   if (inputValue === '') {
-    alert("You must write something!");
+    alert("Wpisz nazwę zadania do realizacji.");
   } else {
     document.getElementById("myUL1").appendChild(li);
   }
@@ -88,7 +88,7 @@ function newElement2() {
     var t = document.createTextNode(inputValue);
     li.appendChild(t);
     if (inputValue === '') {
-      alert("You must write something!");
+      alert("Wpisz zadanie, które doszło w trakcie prac");
     } else {
       document.getElementById("myUL2").appendChild(li);
     }
@@ -115,7 +115,7 @@ function newElement2() {
     var t = document.createTextNode(inputValue);
     li.appendChild(t);
     if (inputValue === '') {
-      alert("You must write something!");
+      alert("Dopisz zadanie, które ukończyłeś");
     } else {
       document.getElementById("myUL3").appendChild(li);
     }
