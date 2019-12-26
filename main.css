@@ -19,34 +19,11 @@ body
   opacity:0.9;
   margin-top: -60px;
   text-align: center;
+  font-size: 35px;
+  font-family: 'Lobster';
   }
 
-  a .menu_item:hover {
-    color: rgb(143, 143, 143);
-    text-decoration: none;
-  }
 
-  .menu_item {
-  display: inline-block;
-  height: 60px;
-  float: inline-end;
-  margin: 0px 3vw;
-  color: white;
-  }
-
-  span.menu_icon {
-    display: block;
-    position: relative;
-    top: -20px;
-    font-size: 20px;
-  }
-
-  /* .menu_link {
-    display: block;
-    height: 40px;
-  } */
-
-/* flex_box */
 
 .box {
     color:white;
@@ -72,18 +49,8 @@ body
     
     } 
 
-  .box1 p {
-    text-align: center;
-    margin: auto;
-    font-size: 56px;
-    font-weight: 700;
-    font-family: 'Ubuntu', sans-serif;
-    color: rgba(255, 255, 255, 0.932);
-    }
-
   .box2 {
     flex: auto;
-    text-align: center;
     }
 
 
@@ -91,7 +58,10 @@ body
     flex: auto;
     }
 
-  
+h2 {
+  margin: 5px;
+  font-family: 'Open Sans', sans-serif;
+}
 
     /* Include the padding and border in an element's total width and height */
 * {
@@ -120,11 +90,6 @@ ul li {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-}
-
-/* Set all odd list items to a different color (zebra-stripes) */
-ul li:nth-child(odd) {
-  background: #f9f9f9;
 }
 
 /* Darker background-color on hover */
