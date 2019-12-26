@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Do Roboty App</title>
+	<meta name="description" content="Do Roboty App">
+	<meta name="keywords" content="ToDo, app, tasks, zadania">
+	<meta name="author" content="Łukasz Szulc">
+	<meta http-equiv="X-Ua-Compatible" content="IE=edge">
+    <link rel="shortcut icon" href="img/favicon.ico" />
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="css/fontello.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700|Ubuntu:700&display=swap&subset=latin-ext" rel="stylesheet">
+    
+	<!--[if lt IE 9]>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+	<![endif]-->
+	
+</head>
+
+<body>
+    <main>
+
+        <section id="menu">
+            <div class="menu">
+                <div class="top">Do Roboty App</div>
+            </div>
+        </section>
+        <section id="flex_top">
+            <div class="container_flex">
+                <div class="box box1">
+                    <div id="myDIV" class="header">
+                        <h2 style="margin:5px">Do roboty</h2>
+                        <input type="text" id="myInput1" placeholder="Dodaj zadanie..." maxlength="40">
+                        <span onclick="newElement()" class="addBtn">Dawaj</span>
+                    </div>
+                    <ul id="myUL1" class="connectedSortable">
+                        <li>Rozpisanie zadań</li>
+                        <li>Schemat strony</li>
+                        <li>Technologie front-end</li>
+                        <li>Technologie back-end</li>
+                        <li>Budowa zespołu</li>
+                    </ul>
+                </div>
+                <div class="box box2">
+                    <div id="myDIV2" class="header">
+                        <h2 style="margin:5px">W trakcie roboty</h2>
+                        <input type="text" id="myInput2" placeholder="Doszło w trakcie..." maxlength="40">
+                        <span onclick="newElement2()" class="addBtn">Dawaj</span>
+                    </div>
+                    <ul id="myUL2" class="connectedSortable">
+                        <li>Hit the gym</li>
+                        <li class="checked">Pay bills</li>
+                        <li>Meet George</li>
+                        <li>Buy eggs</li>
+                        <li>Read a book</li>
+                        <li>Organize office</li>
+                    </ul>
+                </div>
+                <div class="box box3" id="TechStack">
+                    <div id="myDIV3" class="header">
+                        <h2 style="margin:5px">Szefie zrobione!</h2>
+                        <!-- <input type="text" id="myInput3" placeholder="Wpisz zadanie....">
+                        <span onclick="newElement3()" class="addBtn">Dawaj</span> -->
+                    </div>
+                    <ul id="myUL3" class="connectedSortable">
+                        <li class="checked">Hit the gym</li>
+                        <li class="checked">Pay bills</li>
+                        <li class="checked">Meet George</li>
+                        <li class="checked">Buy eggs</li>
+                        <li class="checked">Read a book</li>
+                        <li class="checked">Organize office</li>
+                    </ul>
+                </div>
+            </div>
+
+
+        </section>
+
+    </main>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="main.js"></script>
+
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>
+    $( function() {
+      $( "#myUL1, #myUL2, #myUL3" ).sortable({
+        connectWith: ".connectedSortable"
+      }).disableSelection();
+    } );
+    </script>
+    
+</body>
+</html>
